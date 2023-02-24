@@ -3,29 +3,53 @@
     <Head>
         <meta charset="utf-8"/>
         <Title> David O. Miquel</Title>
+        <link rel="stylesheet" href="index.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+        <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.WAVES({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                shininess: 9.00,
+                waveHeight: 19.00,
+                waveSpeed: 0.40,
+                zoom: 0.83
+            });
+        } 
+        </script>
     </Head>
-    <link rel="stylesheet" href="index.css"
     <body>
+        <div id="vanta"></div>
+        <main class="animated"></main>
         <h1>Hello everyone</h1> 
         <header>
             <h1>@davidomiquel</h1>
-
         </header>
         <ul>
             <li>
                 <a href="https://www.linkedin.com/in/davidomiquel/">
-                <img src="Images/Linkedin.png" alt="Linkedin" width="20" />
+                    <img src="Images/Linkedin.png" alt="Linkedin" width="20" />
                     linkedin
+                </a>
             </li>
             <li>
                 <a href="https://github.com/Davidomiquel">
                     <img src="Images/github.png" alt="Github" width="20" />
                     Github
+                </a>
             </li>
             <li>
                 <a href="https://www.instagram.com/lobo_thedogg/">
                     <img src="Images/instagram-logo.svg" alt="Instagram" width="20" />
                     Instagram
+                </a>
             </li>
         </ul>
     </body>
